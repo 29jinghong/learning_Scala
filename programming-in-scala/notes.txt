@@ -26,7 +26,7 @@ Functional programming is guided by two main ideas.
 The first idea is that functions are first-class values.
 In a functional language, a function is a value of the same status as
 , say, an integer or a string. 
-You can pass func- tions as arguments to other functions
+You can pass functions as arguments to other functions
 , return them as results from functions, or store them in variables.
 You can also define a function inside another function
 , just as you can define an integer value inside a function.
@@ -204,8 +204,9 @@ args.foreach(println)
 in this code it works the same as the code above.
 it loops the args like 
 
-scala pa.scala 'Concise is fun'
-                    1 >  2 > 3
+$scala pa.scala Concise is fun
+                  |     |     \
+                arg(0) arg(1) arg(2)
 
 =============================================================
 
@@ -224,3 +225,4 @@ what is single-precision float
 
 todo:
 research Lisp, Smalltalk, Simula, Scheme, SML, Erlang, Haskell, OCaml, F#.(youtube)
+continew reading on page 42 botom
