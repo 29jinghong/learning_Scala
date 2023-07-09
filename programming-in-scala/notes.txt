@@ -1,11 +1,15 @@
 Scala 
 
 =============================================================
-Chapter 1
+Chapter 1(pg29)
+
+A Scalable Language
+
 Scala is an acoronym for scalable lange 
 it is statically typed - have type for varible stored, and can't be changed
 it is also functional and object oriented
 Scala is really good with fusion functional and object oriented 
+
 -----------------------------------------------------------------------------------
 Object Oriented Programing
 
@@ -14,6 +18,7 @@ trivial(琐碎的)
 
 For instance, many languages admit values that are not objects, such as the primitive values in Java
 (The eight primitives defined in Java are int, byte, short, long, float, double, boolean and char)
+
 -----------------------------------------------------------------------------------
 Functional programming is guided by two main ideas.
 
@@ -41,11 +46,18 @@ Methods like that is called referentially transparent
 
 imperative style
 is what programming with mutable data and side effects is called
+
 -----------------------------------------------------------------------------------
 SBT
 is an open source build tool for Scala and Java projects
 is used to compile and run Scala
 
+=============================================================
+Chapter 2(pg48)
+
+First Steps in Scala
+
+-----------------------------------------------------------------------------------
 Data types
 
 bit - (a bit is a single zero or one)
@@ -60,6 +72,142 @@ Int - can hold value from -32768 to 32767 (16-bit signed value).
 Long - can gold value from -2^63 to (2^63)-1 (64-bit signed value)
 Booleans - can assign either true or false.
 Float - can store real numbers (32-bite single-precision float)
+Double - can store real numbers (64 - bit single-precision float)
+
+val - none mutable varable
+var - mutable varable
+
+-----------------------------------------------------------------------------------
+How To Define
+
+__________________________________________________________
+'''
+val msg = "Hello, World!"
+'''
+This is defineing a varible, a none mutable variable 
+called msg which contains the string "Hello, World!"
+__________________________________________________________
+'''
+var msg2 = "Hello, World"
+'''
+This is defineing a mutable variable that can be 
+changed by useing the below command
+__________________________________________________________
+'''
+msg2 = "Hello again World."
+'''
+This is how you reassign^
+__________________________________________________________
+
+-----------------------------------------------------------------------------------
+Define Some functions
+
+__________________________________________________________
+'''
+def max(x:Int, y:Int): Int = {
+    if(x>y)
+        x
+    else
+        y
+}
+'''
+* starts with def key World
+* next function name
+* inside the "()" is the input variables
+* next is ":" to indicate that the end of the variables.
+* then is the output type
+* inside the "{}" is the function body
+__________________________________________________________
+repl - read execute print loop
+"quit" to quit the SBT
+
+-----------------------------------------------------------------------------------
+Write Some Scala Scripts
+
+__________________________________________________________
+'''
+println("Hello, World, from a script!")
+'''
+then you run the program
+
+$ scala hello.scala
+then you get the out put
+
+>>>Hello, Wrold, from a script!
+__________________________________________________________
+
+then you can write a the code like this to read input from the user through arguments
+'''
+println("Hello, " + args(0) + "!")
+'''
+and run
+
+$scala hello.scala planet
+in this command "planet" is in replacenment of 
+args(0) since it is at the arg position 0
+then you will get the output
+
+>>>Hello, planet!
+__________________________________________________________
+
+-----------------------------------------------------------------------------------
+Loop with while, decide with if
+
+__________________________________________________________
+'''
+var i = 0
+while(i < args.length){
+    println(args(i))
+    i += 1
+}
+'''
+in this function there is a while loop checking
+if the args.length is larger than zero.
+if the length is larger than zero then it will continew print out the rest of the words
+then you run 
+
+$scala printargs.scala scala is fun!
+next you will get the out put
+
+>>>scala
+>>>is
+>>>fun!
+
+index(0)    index(1)    index(2)
+scala       is          fun!
+i=0         i=1         i=2
+args.length = 2
+so it goes throw 'scala if fun!' one word by one printing all of them
+__________________________________________________________
+
+-----------------------------------------------------------------------------------
+Iterate with foreach and for
+
+__________________________________________________________
+'''
+args.foreach(arg => println(arg))
+'''
+in this code the function takes in the args and println them one by one
+you run this
+
+$scala pa.scala Concise is nice
+then you would get this 
+
+>>>Concise
+>>>is
+>>>nice
+__________________________________________________________
+
+'''
+args.foreach(println)
+'''
+in this code it works the same as the code above.
+it loops the args like 
+
+scala pa.scala 'Concise is fun'
+                    1 >  2 > 3
+
+=============================================================
 
 
 question for this week:
