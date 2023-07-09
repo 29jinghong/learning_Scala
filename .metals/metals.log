@@ -1,0 +1,626 @@
+2023.04.30 07:01:38 INFO  Started: Metals version 0.11.12 in workspace '/Users/jinghongwang/Projects/scala-project' for client Visual Studio Code 1.73.1.
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/jinghongwang/Projects/scala-project/.metals/metals (H2 2.1)
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory allAppliedMigrations
+INFO: Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.016s)
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.schemahistory.JdbcTableSchemaHistory create
+INFO: Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": << Empty Schema >>
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "1 - Create tables"
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "2 - Server discovery"
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "3 - Jar symbols"
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate doMigrateGroup
+INFO: Migrating schema "PUBLIC" to version "4 - Fingerprints"
+Apr 30, 2023 7:01:38 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Successfully applied 4 migrations to schema "PUBLIC", now at version v4 (execution time 00:00.050s)
+2023.04.30 07:01:38 INFO  time: initialize in 0.55s
+2023.04.30 07:01:40 WARN  Build server is not auto-connectable.
+2023.04.30 07:01:40 WARN  no build tool detected in workspace '/Users/jinghongwang/Projects/scala-project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.04.30 07:01:40 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:01:48 INFO  no build target found for /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.04.30 07:02:30 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:02:32 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 07:02:34 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:02:35 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 07:02:35 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:02:36 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 07:02:37 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:03:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 07:04:55 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:45:35 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:47:05 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.04.30 09:47:07 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:47:35 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:49:38 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:51:01 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:56:48 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.04.30 09:57:25 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+May 07, 2023 9:27:09 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1180
+2023.05.07 09:30:38 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.07 09:30:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 04:17:02 INFO  Shutting down server
+2023.05.14 04:17:02 INFO  shutting down Metals
+2023.05.14 04:17:02 INFO  Exiting server
+2023.05.14 05:15:58 INFO  Started: Metals version 0.11.12 in workspace '/Users/jinghongwang/Projects/scala-project' for client Visual Studio Code 1.73.1.
+May 14, 2023 5:15:58 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+May 14, 2023 5:15:58 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+May 14, 2023 5:15:58 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+May 14, 2023 5:15:59 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/jinghongwang/Projects/scala-project/.metals/metals (H2 2.1)
+May 14, 2023 5:15:59 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.025s)
+May 14, 2023 5:15:59 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+May 14, 2023 5:15:59 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.05.14 05:15:59 INFO  time: initialize in 0.7s
+2023.05.14 05:16:01 WARN  Build server is not auto-connectable.
+2023.05.14 05:16:01 WARN  no build tool detected in workspace '/Users/jinghongwang/Projects/scala-project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.05.14 05:16:01 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:16:06 INFO  no build target found for /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.05.14 05:16:08 INFO  time: code lens generation in 6.83s
+2023.05.14 05:21:46 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 05:24:08 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:24:11 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:47:22 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:47:35 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:49:10 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 05:49:12 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:52:31 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:52:52 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:53:30 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:54:29 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:54:45 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:55:25 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 05:57:08 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 05:59:12 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 05:59:21 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 05:59:57 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 06:00:36 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:00:46 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 06:01:33 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:02:09 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:02:12 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:03:04 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:04:10 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:05:43 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:06:06 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:06:08 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:06:11 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:06:47 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:08:45 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:22:31 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:22:34 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:24:30 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:24:32 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:25:31 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:27:19 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:27:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:28:21 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:28:22 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:33:17 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:33:43 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:34:27 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+May 14, 2023 6:39:37 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 8372
+2023.05.14 06:40:49 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:41:18 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:41:31 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:42:16 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 06:42:22 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 06:43:09 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:43:15 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 06:43:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.05.14 06:44:44 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.05.14 06:47:55 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:48:01 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:49:47 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:49:49 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:50:47 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:51:34 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:52:20 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:54:14 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:54:39 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:54:41 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 06:55:23 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+May 14, 2023 7:03:32 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 10742
+2023.05.14 07:06:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 07:07:41 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:08:41 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:09:13 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:09:36 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:09:46 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:09:54 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:11:37 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:12:30 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:50:45 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.05.14 07:50:45 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.05.14 07:50:45 INFO  Shutting down server
+2023.05.14 07:50:45 INFO  shutting down Metals
+2023.05.14 07:50:45 INFO  Exiting server
+2023.06.25 00:01:19 INFO  Started: Metals version 0.11.12 in workspace '/Users/jinghongwang/Projects/scala-project' for client Visual Studio Code 1.73.1.
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersionOnly
+INFO: Flyway Community Edition 9.16.3 by Redgate
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: See release notes here: https://rd.gt/416ObMi
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.license.VersionPrinter printVersion
+INFO: 
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.database.base.BaseDatabaseType createDatabase
+INFO: Database: jdbc:h2:file:/Users/jinghongwang/Projects/scala-project/.metals/metals (H2 2.1)
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.command.DbValidate validate
+INFO: Successfully validated 4 migrations (execution time 00:00.029s)
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.command.DbMigrate migrateGroup
+INFO: Current version of schema "PUBLIC": 4
+Jun 25, 2023 12:01:19 AM org.flywaydb.core.internal.command.DbMigrate logSummary
+INFO: Schema "PUBLIC" is up to date. No migration necessary.
+2023.06.25 00:01:20 INFO  time: initialize in 0.74s
+2023.06.25 00:01:22 WARN  Build server is not auto-connectable.
+2023.06.25 00:01:22 WARN  no build tool detected in workspace '/Users/jinghongwang/Projects/scala-project'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+2023.06.25 00:01:22 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 00:01:29 INFO  no build target found for /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala. Using presentation compiler with project's scala-library version: 3.2.2
+2023.06.25 00:01:32 INFO  time: code lens generation in 9.67s
+2023.06.25 00:01:32 INFO  time: code lens generation in 2.19s
+2023.06.25 00:03:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 00:05:03 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 00:05:28 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 00:06:39 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 00:07:06 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 00:07:26 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 00:07:29 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 06:56:31 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+Jun 25, 2023 6:56:31 AM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 740
+2023.06.25 07:10:57 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 07:11:39 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.06.25 07:17:04 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 07:17:10 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 07:17:37 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:17:48 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:18:36 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:19:34 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:21:21 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:21:42 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:24:32 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:24:50 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:26:23 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+error while checking new print(acc.sum acc null)
+error while checking val csa = new print(acc.sum acc null)
+error while checking {
+  class ChecksumAccumulator {
+    var sum = 0
+  }
+  val acc = new ChecksumAccumulator()
+  val csa = new print(acc.sum acc null)
+  <empty>
+}
+error while checking def step13(): Unit = 
+  {
+    class ChecksumAccumulator {
+      var sum = 0
+    }
+    val acc = new ChecksumAccumulator()
+    val csa = new print(acc.sum acc null)
+    <empty>
+  }
+error while checking  {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking module object Chapter03 {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking package org.programingscala.chapter04 {
+  module object Chapter03 {
+    def step13(): Unit = 
+      {
+        class ChecksumAccumulator {
+          var sum = 0
+        }
+        val acc = new ChecksumAccumulator()
+        val csa = new print(acc.sum acc null)
+        <empty>
+      }
+  }
+}
+Jun 25, 2023 7:27:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+java.lang.AssertionError: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:172)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$1(ParserPhase.scala:38)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$adapted$1(ParserPhase.scala:39)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:429)
+	at dotty.tools.dotc.parsing.Parser.parse(ParserPhase.scala:39)
+	at dotty.tools.dotc.parsing.Parser.runOn$$anonfun$1(ParserPhase.scala:48)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.parsing.Parser.runOn(ParserPhase.scala:48)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:238)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:249)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:257)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:266)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:266)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:190)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	at scala.meta.internal.pc.SignatureHelpProvider$.signatureHelp(SignatureHelpProvider.scala:40)
+
+error while checking new print(acc.sum acc null)
+error while checking val csa = new print(acc.sum acc null)
+error while checking {
+  class ChecksumAccumulator {
+    var sum = 0
+  }
+  val acc = new ChecksumAccumulator()
+  val csa = new print(acc.sum acc null)
+  <empty>
+}
+error while checking def step13(): Unit = 
+  {
+    class ChecksumAccumulator {
+      var sum = 0
+    }
+    val acc = new ChecksumAccumulator()
+    val csa = new print(acc.sum acc null)
+    <empty>
+  }
+error while checking  {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking module object Chapter03 {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking package org.programingscala.chapter04 {
+  module object Chapter03 {
+    def step13(): Unit = 
+      {
+        class ChecksumAccumulator {
+          var sum = 0
+        }
+        val acc = new ChecksumAccumulator()
+        val csa = new print(acc.sum acc null)
+        <empty>
+      }
+  }
+}
+Jun 25, 2023 7:27:21 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+java.lang.AssertionError: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:172)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$1(ParserPhase.scala:38)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$adapted$1(ParserPhase.scala:39)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:429)
+	at dotty.tools.dotc.parsing.Parser.parse(ParserPhase.scala:39)
+	at dotty.tools.dotc.parsing.Parser.runOn$$anonfun$1(ParserPhase.scala:48)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.parsing.Parser.runOn(ParserPhase.scala:48)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:238)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:249)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:257)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:266)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:266)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:190)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	at scala.meta.internal.pc.PcCollector.<init>(PcCollector.scala:41)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider.<init>(PcDocumentHighlightProvider.scala:16)
+
+error while checking new print(acc.sum acc null)
+error while checking val csa = new print(acc.sum acc null)
+error while checking {
+  class ChecksumAccumulator {
+    var sum = 0
+  }
+  val acc = new ChecksumAccumulator()
+  val csa = new print(acc.sum acc null)
+  <empty>
+}
+error while checking def step13(): Unit = 
+  {
+    class ChecksumAccumulator {
+      var sum = 0
+    }
+    val acc = new ChecksumAccumulator()
+    val csa = new print(acc.sum acc null)
+    <empty>
+  }
+error while checking  {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking module object Chapter03 {
+  def step13(): Unit = 
+    {
+      class ChecksumAccumulator {
+        var sum = 0
+      }
+      val acc = new ChecksumAccumulator()
+      val csa = new print(acc.sum acc null)
+      <empty>
+    }
+}
+error while checking package org.programingscala.chapter04 {
+  module object Chapter03 {
+    def step13(): Unit = 
+      {
+        class ChecksumAccumulator {
+          var sum = 0
+        }
+        val acc = new ChecksumAccumulator()
+        val csa = new print(acc.sum acc null)
+        <empty>
+      }
+  }
+}
+Jun 25, 2023 7:27:22 AM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+java.lang.AssertionError: assertion failed: position error, parent span does not contain child span
+parent      = new print(acc.sum acc null) # -1,
+parent span = <372..715>,
+child       = acc.sum acc null # -1,
+child span  = [400..684..721]
+	at scala.runtime.Scala3RunTime$.assertFailed(Scala3RunTime.scala:8)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:172)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:197)
+	at dotty.tools.dotc.ast.Positioned.check$1$$anonfun$3(Positioned.scala:202)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.ast.Positioned.check$1(Positioned.scala:202)
+	at dotty.tools.dotc.ast.Positioned.checkPos(Positioned.scala:223)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$1(ParserPhase.scala:38)
+	at dotty.tools.dotc.parsing.Parser.parse$$anonfun$adapted$1(ParserPhase.scala:39)
+	at scala.Function0.apply$mcV$sp(Function0.scala:42)
+	at dotty.tools.dotc.core.Phases$Phase.monitor(Phases.scala:429)
+	at dotty.tools.dotc.parsing.Parser.parse(ParserPhase.scala:39)
+	at dotty.tools.dotc.parsing.Parser.runOn$$anonfun$1(ParserPhase.scala:48)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.immutable.List.foreach(List.scala:333)
+	at dotty.tools.dotc.parsing.Parser.runOn(ParserPhase.scala:48)
+	at dotty.tools.dotc.Run.runPhases$1$$anonfun$1(Run.scala:238)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:15)
+	at scala.runtime.function.JProcedure1.apply(JProcedure1.java:10)
+	at scala.collection.ArrayOps$.foreach$extension(ArrayOps.scala:1321)
+	at dotty.tools.dotc.Run.runPhases$1(Run.scala:249)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$1(Run.scala:257)
+	at dotty.tools.dotc.Run.compileUnits$$anonfun$adapted$1(Run.scala:266)
+	at dotty.tools.dotc.util.Stats$.maybeMonitored(Stats.scala:68)
+	at dotty.tools.dotc.Run.compileUnits(Run.scala:266)
+	at dotty.tools.dotc.Run.compileSources(Run.scala:190)
+	at dotty.tools.dotc.interactive.InteractiveDriver.run(InteractiveDriver.scala:165)
+	at scala.meta.internal.pc.MetalsDriver.run(MetalsDriver.scala:45)
+	at scala.meta.internal.pc.PcCollector.<init>(PcCollector.scala:41)
+	at scala.meta.internal.pc.PcDocumentHighlightProvider.<init>(PcDocumentHighlightProvider.scala:16)
+
+2023.06.25 07:27:57 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:28:14 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 07:28:45 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:29:13 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:29:56 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:30:42 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.06.25 07:31:10 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:31:23 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:32:46 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:32:49 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:33:12 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:35:08 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 07:35:56 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:36:05 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:36:22 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:36:28 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:36:46 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 07:36:52 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:03:48 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:03:59 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:04:24 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:09:33 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:26:25 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:26:29 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:28:39 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 09:29:47 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 09:30:32 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.06.25 09:30:42 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.06.25 09:38:12 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:38:18 WARN  Using indexes to guess the definition of Chapter04
+2023.06.25 09:38:18 WARN  Using indexes to guess the definition of step15
+2023.06.25 09:38:21 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/Main.scala
+2023.06.25 09:41:36 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:41:40 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:47:33 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:49:43 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:52:00 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 09:52:02 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 10:08:07 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 10:08:29 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 10:09:24 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.06.25 10:09:43 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.07.02 10:50:11 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.07.02 10:54:30 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter01/Chapter01.scala
+2023.07.02 10:54:33 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter02/Chapter02.scala
+2023.07.09 04:57:13 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter03/Chapter03.scala
+2023.07.09 04:57:13 WARN  no build target for: /Users/jinghongwang/Projects/scala-project/programming-in-scala/src/main/scala/org/programingscala/chapter04/Chapter04.scala
+2023.07.09 04:57:14 INFO  Shutting down server
+2023.07.09 04:57:14 INFO  shutting down Metals
+2023.07.09 04:57:14 INFO  Exiting server
