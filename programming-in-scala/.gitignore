@@ -13,4 +13,5 @@ outputfiles/
 metals.sbt
 .metals/
 .vscode/
-
+.vscode
+.metals
