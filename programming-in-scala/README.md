@@ -49,6 +49,37 @@ Methods like that is called **referentially transparent**
 
 * **Imperative style** is what programming with mutable data and side effects is called
 
+in Scala a function value is an object(pg35)
+
+object is basicaly a instance of a class
+in order to create a object you would need a instance of some kind of class
+
+here is some example:
+
+```scala
+def test(x: Int)(y: Int): Int = x + y
+def testTwo(x: Int)(y: Int): Int = x * y
+
+val addOne: Int => Int = test(1) _
+val addTwo: Function1[Int, Int] = test(2) _
+//function curry
+
+List(1, 2, 3).map(addTwo)
+List(1, 2, 3).map(i => i + 2)
+```
+
+method implementation(pg36)
+
+on the left side of the equal sign for def is the method signature
+and on the right is the method implementation
+
+name-less function literals & 
+first-class nested functions (pg37)
+
+>name less functions - are also called anonymous function
+
+>first class - can pass into a function as a value
+
 ### SBT
 ---
 

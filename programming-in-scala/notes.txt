@@ -1,0 +1,137 @@
+chapter 2
+----
+1
+Learn to use the Scala interpreter
+===
+
+shell - a simple type an expression into the interpreter and it will 
+evaluate the expression and print the resulting value.
+
+you can activate scala shell useing scala 
+
+you can then type in 1+1 
+which will return 
+res0: Int = 3
+this contains 
+1)a genrated name or user defined name "res0"
+2)a colon 
+3)the type of the value
+4)an equal sign
+5)the value
+
+the data type in scala is some what simular to java's just a little defrent
+for example scala.Boolean corresponds to Java’s 
+boolean.scala.Float corresponds to Java’s float
+
+you then can use res0 later on since is stored into the shell system
+for example you can type
+> res0 * 3
+
+you will get the out put as
+res1: Int = 9
+
+2
+Define some variables
+===
+
+scala have two kind of varables var and val
+where var can be reassinged unlimited times and val can not be reassinged
+
+for example :
+
+val msg = "Hello, world!"
+
+where the msg is assinged as a val which cant be reassinged 
+you can later on use this value by
+
+println(msg)
+
+but since the msg is not assined useing var 
+doing :
+
+msg = "Goodbye cruel world!"
+
+will cause the system to output:
+
+<console>:5: error: reassignment to val
+         msg = "Goodbye cruel world!"
+             ˆ
+
+if you want to reassing def the value useing var:
+
+var msg1 = "hi"
+
+then you can reassing by typeing:
+
+msg1 = "hi again!"
+
+3
+Define some functions
+===
+
+here is how you define a function:
+
+def max(x: Int, y: Int): Int = {
+    if (x > y)
+        x 
+    else 
+        y
+    }
+
+1) starts with def key World
+2) next function name
+3) inside the ( ) is the input variables
+4) next is : to indicate that the end of the variables.
+5) then is the output type which is also called function’s result type
+6) inside the { } is the function body
+
+you can also write the max function like this:
+
+def max2(x: Int, y: Int) = if (x > y) x else y
+
+since you can leave off the {} it can be written in this one single line
+then you can use the max function by typeing:
+
+max(2, 3)
+
+it will then output:
+
+res0 = Int = 3
+
+functions can return deferent results too for example 
+Int means the function returns an int and 
+when the function don't return any thing it returns a unit
+
+4
+Write some Scala scripts
+===
+
+you can wirte some simple scripts in scala too for example 
+println("Hello, " + args(0) + "!")
+
+this line of code takes input derectly from the command line and print out the output.
+the code args(0) means that is going to print the position 0 of the args.
+
+so if you run:
+
+> scala helloarg.scala planet
+
+it will print 
+Hello, planet!
+
+concatenating string
+you can concatenat strings useing the + oprator which looks like this:
+"hello" + " world"
+
+5
+Loop with while, decide with if
+===
+
+you can write a while loop the same as in java
+block - the code between the curly braces
+
+6
+Iterate with foreach and for
+===
+you can iterate with foreach so you would not need to write alot more than what you needed
+since this is a specal function in scala not presented in java, this will later on be explained more procise.
