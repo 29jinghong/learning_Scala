@@ -140,20 +140,6 @@ object Chapter03{
     // Console.err.println("Please enter filename")
     }
 
-    def test(x: Int)(y: Int): Int = x + y
-
-    def testTwo(x: Int)(y: Int): Int = x * y
-
-    val addOne: Int => Int = test(1) _
-
-    val addTwo: Function1[Int, Int] = test(2) _
-    //function curry
-
-    List(1, 2, 3).map(addTwo)
-
-    List(1, 2, 3).map(i => i + 2)
-
-
 }
 
 //defrerence bettwen hashset vs set, hashmap vs map(google this)
