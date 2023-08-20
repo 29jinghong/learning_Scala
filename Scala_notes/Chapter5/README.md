@@ -2,16 +2,17 @@
 
 ## 5.1 Some basic types
 
-Value Type              Range
-Byte                8-bit signed two’s complement integer (-27 to 27 - 1, inclusive)
-Short               16-bit signed two’s complement integer (-215 to 215 - 1, inclusive)
-Int                 32-bit signed two’s complement integer (-231 to 231 - 1, inclusive)
-Long                64-bit signed two’s complement integer (-263 to 263 - 1, inclusive)
-Char                16-bit unsigned Unicode character (0 to 216 - 1, inclusive)
-String              a sequence of Chars
-Float               32-bit IEEE 754 single-precision float
-Double              64-bit IEEE 754 double-precision float
-Boolean             true or false
+|Value Type     |         Range                                                           |
+|---------------|-------------------------------------------------------------------------|
+|Byte           |     8-bit signed two’s complement integer (-27 to 27 - 1, inclusive)    |
+|Short          |     16-bit signed two’s complement integer (-215 to 215 - 1, inclusive) |
+|Int            |     32-bit signed two’s complement integer (-231 to 231 - 1, inclusive) |
+|Long           |     64-bit signed two’s complement integer (-263 to 263 - 1, inclusive) |
+|Char           |     16-bit unsigned Unicode character (0 to 216 - 1, inclusive)         |
+|String         |     a sequence of Chars                                                 |
+|Float          |     32-bit IEEE 754 single-precision float                              |
+|Double         |     64-bit IEEE 754 double-precision float                              |
+|Boolean        |     true or false                                                       |
 
 ## 5.2 Literals
 
@@ -53,15 +54,16 @@ String literals:
 
 The usual notation for a string literal is to surround a number of characters by double quotes (")
 
-Literal         Meaning
-\n              line feed (\u000A)
-\b              backspace (\u0008)
-\t              tab (\u0009)
-\f              form feed (\u000C)
-\r              carriage return (\u000D) 
-\"              double quote (\u0022)
-\'              single quote (\u0027) 
-\\              backslash (\u005C)
+|Literal    |     Meaning                   |
+|-----------|-------------------------------|
+|\n         |     line feed (\u000A)        |
+|\b         |     backspace (\u0008)        |
+|\t         |     tab (\u0009)              |
+|\f         |     form feed (\u000C)        |
+|\r         |     carriage return (\u000D)  |
+|\"         |     double quote (\u0022)     |
+|\'         |     single quote (\u0027)     |
+|\\         |     backslash (\u005C)        |
 
 You start and end a raw string with three quotation marks in a row ("""). 
 in a raw string you dont need to type \\ for a single back slash.
@@ -205,6 +207,7 @@ you should usually use either ==, or its inverse !=.
 
 These operations actually apply to all objects, not just basic types.
 For example, you can use it to compare lists:
+
 ```scala
 scala> List(1, 2, 3) == List(1, 2, 3)
 res27: Boolean = true
@@ -350,11 +353,11 @@ list :+ "hi"
 ```
 
 
-a:::b:::c
+a ::: b ::: c
 
 is treated as
 
-a:::(b:::c).
+a ::: (b ::: c).
 
 But
 
