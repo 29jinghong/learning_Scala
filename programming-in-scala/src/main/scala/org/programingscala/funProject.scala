@@ -1,4 +1,4 @@
-package org.programingscala.funProject
+//package org.programingscala.funProject
 
 //================================read all names from a file==============================
 //read the name from the file useing scala.io.Source

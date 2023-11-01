@@ -4,6 +4,8 @@ import org.programingscala.chapter01.Chapter01
 import org.programingscala.chapter02.Chapter02
 import org.programingscala.chapter03.Chapter03 
 import org.programingscala.chapter04.Chapter04 
+import org.programingscala.chapter06.Chapter06
+import org.programingscala.chapter08.Chapter08
 
 object Main extends App {
 	//============================Chapter 1==================================
@@ -31,10 +33,12 @@ object Main extends App {
   // println()
 
   //============================Chapter 4==================================
-  println("Chapter 4: ")
-  Chapter04.step13()
-  Chapter04.step14()
-  Chapter04.step15()
-  Chapter04.step16()
+  //println("Chapter 4: ")
+  //Chapter04.step13()
+  //Chapter04.step14()
+  //Chapter04.step15()
+  //Chapter04.step16()
   
+  //===========================Chapter 8=====================================
+  Chapter08.increasingNum()
 }
