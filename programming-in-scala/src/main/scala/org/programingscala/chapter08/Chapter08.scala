@@ -79,8 +79,11 @@ there is also a fulter method in scala:
 */
 
         val someNumbers = List(-11, -10, -5, 0, 5, 10)
-
-        var newsomeNumbers = someNumbers.filter((x: Int) => x > 0)
+        
+        var newsomeNumbers = someNumbers.filter(_ > 0)
+        
+        println(newsomeNumbers)
+        println(num)
     }
 /*
 this is a filter that passes int x and return whats biger than zero
