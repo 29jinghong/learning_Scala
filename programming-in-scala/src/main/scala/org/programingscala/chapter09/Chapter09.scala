@@ -126,10 +126,6 @@ This second function takes the Int parameter y.
 
     def sum2(x: Int)(y: Int): Int = x + y
 
-    def addFive(x: Int): Int = sum2(5) _
-
-    def addTen(x: Int): Int = sum2(10) _
-
     // def withPrintWriter(file: File)(op: PrintWriter => Unit): Unit = {
     //     val writer = new PrintWriter(file)
     //     try {
