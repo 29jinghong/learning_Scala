@@ -1,7 +1,7 @@
 package org.programingscala.chapter09
 import scala.io.Source
 
-object Chapter09
+object Chapter11
 {
     /* 
     11.1 Scala’s class hierarchy
