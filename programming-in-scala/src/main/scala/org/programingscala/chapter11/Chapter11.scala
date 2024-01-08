@@ -40,12 +40,13 @@ object Chapter09
     //you can have nothing as your return type
 
     def divide(x: Int, y: Int): Int =
-    if (y != 0) x / y
-    else error("can't divide by zero")
+        if (y != 0) x / y
+        else error("can't divide by zero")
 
     // you can also have error as a return in any function such as the above one 
     //since error is type Nothing and Nothing is a sub type of every type it would satisfy the
     //condition of return type int.
+
     val x = "abcd".substring(2)
     val y = "abcd".substring(2)
 
