@@ -40,18 +40,21 @@ object Element {
             private val line = ch.toString * width
             def contents = Array.fill(height)(line)        
         }
-        def elem(contents:  Array[String]): Element =
-            new ArrayElement(contents)
-        def elem(chr: Char, width: Int, height: Int): Element =
-            new UniformElement(chr, width, height)
-        def elem(line: String): Element =
-            new LineElement(line)
+    def elem(contents:  Array[String]): Element =
+        new ArrayElement(contents)
+    def elem(chr: Char, width: Int, height: Int): Element =
+        new UniformElement(chr, width, height)
+    def elem(line: String): Element =
+        new LineElement(line)
 }
 
 abstract class Element {
     def contents: Array[String]
     def width: Int =
         if (height == 0) 0 else contents(0).length
+        //cotents.headOption.map(_.length).getOrElse(0)
+        //you can also use this code to remove the side affect of the code
+        //by useing this code the side affect of 'if else' will not happen any more.
     def height: Int = contents.length
     def above(that: Element): Element =
         elem(this.contents ++ that.contents)
