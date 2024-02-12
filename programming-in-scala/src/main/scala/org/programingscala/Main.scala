@@ -6,6 +6,10 @@ import org.programingscala.chapter03.Chapter03
 import org.programingscala.chapter04.Chapter04 
 import org.programingscala.chapter06.Chapter06
 import org.programingscala.chapter08.Chapter08
+import org.programingscala.chapter09.Chapter09
+import org.programingscala.chapter10.Chapter10
+import org.programingscala.chapter12.{Chapter12 => ch12} 
+
 
 object Main extends App {
 	//============================Chapter 1==================================
@@ -43,5 +47,12 @@ object Main extends App {
   //Chapter08.increasingNum()
   //===========================Chapter 9=====================================
   //===========================Chapter 10====================================
+  //===========================Chapter 12====================================
   
+  ch12.jingyong.hi()
+
+  val jingyong = new ch12.Person("jingyong", 14)
+  jingyong.greeting()
+  jingyong.hi()
+
 }
