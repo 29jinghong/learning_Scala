@@ -1,0 +1,85 @@
+Chapter 13 
+Packages and Imports
+
+outside of a module—its interface
+
+inside of a module—its implementation
+
+13.1 Packages
+
+packages means you can pack up a entire files content into
+one of the packages to import and use it in the top of the file
+
+wich looks like this:
+
+package bobsrockets.navigation
+class Navigator { ... }
+
+the following is a nested package:
+
+package bobsrockets {
+  package navigation {
+    class Navigator { ... }
+  }
+  package tests {
+    object NavigatorTest {
+      val x = new navigation.Navigator
+... }
+} }
+inside the object NavigatorTest you can acces
+what's in package navigation directly by useing the keyword navigation.Navigator
+
+_root_:
+
+
+13.2 Import
+
+package bobsdelights
+  trait Fruit {
+    val name: String
+    val color: Color
+  }
+  object Fruits {
+    object Apple extends Fruit { ... }
+    object Orange extends Fruit { ... }
+    object Pear extends Fruit { ... }
+    val menu = List(Apple, Orange, Pear)
+}
+
+
+import bobsdelights.Fruit     // easy access to Fruit
+import bobsdelights._         // easy access to all members of bobsdelights
+import bobsdelights.Fruits._  // easy access to all members of Fruits
+
+import Fruits.{Apple, Orange} //you can also import just the two members
+
+import Fruits.{Apple => McIntosh, Orange} //this is how to import muliple and change name
+
+import java.sql.{Date=>SDate} //this is how you change the name for the members.
+
+import java.{sql=>S} //how you import page sql as S
+
+import Fruits.{_} // import all the Fruits members
+
+import Fruits.{Apple => McIntosh, _} //import all members in Fruits and remaing Apple as McIntosh
+
+import Fruits.{Pear => _, _} // import all member exept Pear
+
+13.3 Implicit imports
+import scala._ 
+you can import scala._ so you dont have to type scala.list you can just use list since youve already imported everything under scala
+
+
+13.4 Access modifiers
+Private members
+private members can only be used or visible if it is defined in the class or member.
+
+
+class Outer {
+    class Inner {
+        private def f() { println("f") }
+        class InnerMost {
+            f() // OK }
+        }
+    (new Inner).f() // error:  ‘f’ is not accessible
+}
