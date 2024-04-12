@@ -1,4 +1,5 @@
 package org.programingscala.chapter12
+
 import scala.io.Source
 import scala.language.postfixOps
 //this is for dot notation

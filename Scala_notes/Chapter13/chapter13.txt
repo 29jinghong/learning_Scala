@@ -71,7 +71,9 @@ you can import scala._ so you dont have to type scala.list you can just use list
 
 
 13.4 Access modifiers
-Private members
+
+Private members:
+
 private members can only be used or visible if it is defined in the class or member.
 
 
@@ -83,3 +85,46 @@ class Outer {
         }
     (new Inner).f() // error:  ‘f’ is not accessible
 }
+
+Protected members:
+package p {
+    class Super {
+      protected def f() { println("f") }
+    }
+    class Sub extends Super {
+      f()
+    }
+    class Other {
+         (new Super).f()  // error:  ‘f’ is not accessible
+    }
+}
+
+private[_root_]         same as public access
+private[bobsrockets]    access within outer package  
+private[navigation]     same as private in Java  
+private[Navigator]      same as package visibility in Java
+private[LegOfJourney]   same as private in Scala
+private[this]           access only from same object
+
+Visibility and companion objects
+
+class Rocket {
+    private def canGetHome = deltaV(fuel) < needed
+  }
+  object Rocket {
+    private def deltaV(fuel: Double) = ...
+    def chooseStrategy(rocket: Rocket) {
+      if (rocket.canGetHome)
+goHome()
+else
+        pickAStar()
+    }
+}
+
+A class shares all its access rights with its companion object and vice versa
+
+an object can access all private members of its companion class
+
+which means the Rocket class above can acces deltaV
+the Rocket object can also access the private method canGetHome in class Rocket
+
