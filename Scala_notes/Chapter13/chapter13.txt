@@ -55,15 +55,21 @@ import Fruits.{Apple, Orange} //you can also import just the two members
 
 import Fruits.{Apple => McIntosh, Orange} //this is how to import muliple and change name
 
-import java.sql.{Date=>SDate} //this is how you change the name for the members.
+import java.sql.{Date => SDate} //this is how you change the name for the members.
 
-import java.{sql=>S} //how you import page sql as S
+//how you import page sql as S
+import java.{sql => JSql} 
+import scala.{sql => SSql}
+if you dont change the name the compiler will not compile.
 
 import Fruits.{_} // import all the Fruits members
+or Fruits._ 
 
 import Fruits.{Apple => McIntosh, _} //import all members in Fruits and remaing Apple as McIntosh
 
 import Fruits.{Pear => _, _} // import all member exept Pear
+
+rule if you dont need to edit dont do it.
 
 13.3 Implicit imports
 import scala._ 
