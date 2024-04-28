@@ -1,4 +1,5 @@
 package org.programingscala.chapter12
+
 import scala.io.Source
 import scala.language.postfixOps
 //this is for dot notation
@@ -192,7 +193,7 @@ talks about the best way to line up things and how multiple traits effect super
         def sleep()
     }
     class normalES extends human{
-        def eat(){
+        def eat(): Unit = {
             print(s"at a age of $age is best to eat 5 punds a day")
         }
         def sleep(): Unit = {

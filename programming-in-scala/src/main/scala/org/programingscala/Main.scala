@@ -55,4 +55,5 @@ object Main extends App {
   jingyong.greeting()
   jingyong.hi()
 
+  ch12.Rectangulars
 }
