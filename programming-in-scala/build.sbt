@@ -7,7 +7,8 @@ version := "1.0"
 scalaVersion := "2.13.10"
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "3.2.15" % "test"
+  "org.scalactic" %% "scalactic" % "3.2.18",
+  "org.scalatest" %% "scalatest" % "3.2.18" % "test"
 )
 
 resolvers += Classpaths.sbtPluginReleases
