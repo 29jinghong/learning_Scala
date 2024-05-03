@@ -1,22 +1,31 @@
 package org.programingscala.chapter01
 
 object Chapter01 {
+	//add function
+	def add(x: Int, y: Int): Int = {
+		(x+y)
+	}
 
-		def step1(): Unit = 
-	{
+	//step1
+	def step1(): Unit = {
 		println("STEP 1 :")
 
 		print("20 + 30 = ")//printing the function out
-		println(20 + 30)//caculating the function and print answer to the screen
+		val num1: Int = 20
+		val num2: Int = 30
+
+		val answer01: Int = add(num1, num2)
+		println(answer01)//caculating the function and print answer to the screen
 
 		print("10 - 20 = ")
-		println(10 - 20)//doing minus function and printing it
+		val num3: Int = 10
+		val answer02: Int = add(num3, num1)
+		println(answer02)//doing minus function and printing it
 		println()
 	}
 
-
-	def step2(): Unit =
-	{
+	//step2
+	def step2(): Unit = {
 		println("STEP 2 :")
 		//step one initiating variables
 		
@@ -31,13 +40,11 @@ object Chapter01 {
 		//Int type can only store intigers which is numbers.
 
 		println(n1)//here you print the n1 which is "jinghong"
-
 		println(a1)//here you print the a1 which sould be the number "20"
 	}
 
 	//step3
-	def step3(): Unit = 
-	{
+	def step3(): Unit = {
 		var N1 : String = "jinghong"//initiating varable N1
     	val A1 : Int = 20//initiating varable A1
 		
@@ -51,13 +58,13 @@ object Chapter01 {
 		println(max(A1, A2))//inputing the A1,A2 into max function
 	}
 
-	//used in step3 
-	def sayHello(Name: String, Age: Int): String = //defining the sayHello function and returning a string
-	{ 
+	//sayHello function
+	def sayHello(Name: String, Age: Int): String = 	{
+		//defining the sayHello function and returning a string
 		(s"Hello said from $Name at the age of: $Age")//returning a string with the input name and age 
 	}
 
-	//used in step3
+	//max function
 	def max(x: Int, y: Int): Int = //defining the max function and returning Int for the function
 	{
 		if (x>y) {

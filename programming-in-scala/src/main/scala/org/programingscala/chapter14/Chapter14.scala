@@ -1,6 +1,6 @@
-package org.programingscala.chapter01
+package org.programingscala.chapter14
 
-import org.programingscala.chapter01.Chapter01
+import org.programingscala.chapter01.Chapter01 
 
 object Chapter01Test {
     def main(args: Array[String]): Unit = {
