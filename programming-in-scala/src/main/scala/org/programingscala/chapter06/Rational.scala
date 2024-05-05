@@ -3,7 +3,6 @@ package org.programingscala.chapter06
 
 object Chapter06
 {
-    //def main(args: Array[String]): Unit = {
         //creating class called Rational
         //which takes in two int numbers and create a 1/2 like fount
         class Rational(n: Int, d: Int)
@@ -39,11 +38,4 @@ object Chapter06
             def max(that: Rational) =
                 if (this.lessThan(that)) that else this
         }
-
-        val oneHalf = new Rational(1, 2)
-
-        val r = new Rational(1, 2)
-
-        print(r.numer)
-    //}
 }
