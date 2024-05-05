@@ -1,25 +1,34 @@
 package org.programingscala.chapter01
-
+import org.scalatest.flatspec.AnyFlatSpec
 import org.programingscala.chapter01.Chapter01
 
-object Chapter01Test {
-    def main(args: Array[String]): Unit = {
-        val num1: Int = 20
-        val num2: Int = 30
-        println("testing add function(20+30)......")
-        assert(Chapter01.add(num1, num2) == 50)
-        println("test passed!!!")
-        
-        val age1: Int = 21
-        val name1: String = "jinghong"
-        println("testing sayHello function(name: jinghong, age: 21)......")
-        assert(Chapter01.sayHello(name1, age1) == (s"Hello said from $name1 at the age of: $age1"))
-        println("test passed!!!")
+class Chapter01Test extends AnyFlatSpec {
+    //testing the add function in chapter01
+    "add function" should "add two positive Int" in {
+        assert(Chapter01.add(20, 30) === 50)
+    }
+    it should "add two negitive Int " in {
+        assert(Chapter01.add(-20, -30) === -50)
+    }
+    it should "add one negitive Int and one positive Int" in{
+        assert(Chapter01.add(-20, 30) === 10)
+    }
 
-        val num3: Int = 100
-        val num4: Int = 10
-        println("testing max function(100, 10)......")
-        assert(Chapter01.max(num3, num4) == 100)
-        println("test passed!!!")
+    //testing the sayHello function in chapter01
+    "sayHello function" should "format the age and name" in{
+        assert(Chapter01.sayHello("jinghong", 21) === (s"Hello said from jinghong at the age of: 21"))
+    }
+
+    //testing the max function in chapter01
+    "max function" should "find the max in two positive Int" in{
+        assert(Chapter01.max(100, 10) === 100)
+    }
+
+    it should "find the max in two negitive Int" in{
+        assert(Chapter01.max(-10, -100) === -10)
+    }
+
+    it should "find the max in one negitive Int and one possitive Int" in{
+        assert(Chapter01.max(-100, 100) === 100)
     }
 }

@@ -47,7 +47,6 @@ object Chapter04
 
     def step15(): Unit = 
     {
-
         var i: Int = 1
         // only i in scope here
         while(i <= 10)
@@ -109,4 +108,3 @@ object Chapter04
 }   
 
 //companion object
-
