@@ -1,17 +1,10 @@
 package org.programingscala.chapter14
+
 import org.scalatest.flatspec.AnyFlatSpec
 import org.programingscala.chapter14.Caculator
 //writen using The FlatSpec style
 //specification text and tests line up flat against
 //the left-side indentation level, with no nesting needed.
-
-//is the deference between == and ===
-// == is the reference point and === is the actuall content?
-//how do i run only one test?
-
-class test{
-    println(Caculator.add(2,3))
-}
 
 class Chapter14Test extends AnyFlatSpec {
     //testing the add function in chapter14

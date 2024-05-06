@@ -11,8 +11,9 @@ class RationalSpec extends AnyFlatSpec {
         val r = new Rational(1, 2)
 
         val sum = oneHalf + r
+        val expectedResult = new Rational(1, 1)
 
-        assert(sum === new Rational(2, 2))
+        assert(sum === expectedResult)
     }
     
 }
