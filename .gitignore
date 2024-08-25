@@ -18,4 +18,4 @@ metals.sbt
 weeklyQuestion.txt
 notes.txt
 .bsp/
-programming-in-scala/.bsp/sbt.json
+programming-in-scala/**/.bsp/
