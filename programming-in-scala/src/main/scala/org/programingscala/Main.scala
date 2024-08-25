@@ -1,9 +1,9 @@
 package org.programingscala
 
-import org.programingscala.chapter01.Chapter01 
+import org.programingscala.chapter01.Chapter01
 import org.programingscala.chapter02.Chapter02
-import org.programingscala.chapter03.Chapter03 
-import org.programingscala.chapter04.Chapter04 
+import org.programingscala.chapter03.Chapter03
+import org.programingscala.chapter04.Chapter04
 import org.programingscala.chapter06.Rational
 import org.programingscala.chapter08.Chapter08
 import org.programingscala.chapter09.Chapter09
