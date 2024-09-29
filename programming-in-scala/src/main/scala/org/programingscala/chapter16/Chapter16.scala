@@ -43,7 +43,6 @@ object Chapter16 {
         easyPrint("Another list of fruit")
         println(fruit)
 
-      //go step by step on this
         def isort(xs: List[Int]): List[Int] = {
             if (xs.isEmpty) Nil
             else{
@@ -51,6 +50,8 @@ object Chapter16 {
                 insert(xs.head, isort(xs.tail))
             }
         }
+//isort sorts a list
+//this uses insert to sort the list one by one and adds to it^
 
         def insert(x: Int, xs: List[Int]): List[Int] =
             if (xs.isEmpty || x <= xs.head) x :: xs
@@ -58,6 +59,8 @@ object Chapter16 {
                 println(x, " ", xs)
                 xs.head :: insert(x, xs.tail)
             }
+//insert function
+//the insert function ask for a list and inputs the list in order
 
         easyPrint("Running isort")
         println(isort(nums))
@@ -117,7 +120,7 @@ object Chapter16 {
         }
 
         easyPrint("Running msort")
-        println(msort((x: Int, y: Int) => x < y)(List(5, 7, 1, 3)))
+        println(msort((x: Int, y: Int) => x > y)(List(5, 7, 1, 3)))
 
         easyPrint("Running Find function")
         val testF =  List(-1, 2, 3, -4, 5) find (_ <= 0)
@@ -127,5 +130,7 @@ object Chapter16 {
         easyPrint("Running sort function")
         val testS = List(1, -3, 4, 2, 6).sortWith (_ < _)
         println(testS)
+
+
     }
 }
