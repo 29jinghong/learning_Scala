@@ -1,13 +1,16 @@
 package org.programingscala.chapter18
 
 object BankAccount {
-  var balance: Int = 0
-
-  def apply(): BankAccount = {
-    new BankAccount
+  def apply(name: String): BankAccount = {
+    require(name.nonEmpty, "Name is empty")
+    new BankAccount(name)
   }
+}
 
-  def deposit(amount: Int) {
+class BankAccount private(val name: String){
+  private var balance: Int = 0
+
+  def deposit(amount: Int): Unit = {
     require(amount > 0, "Deposit amount must be greater than 0")
     balance += amount
   }
@@ -21,22 +24,5 @@ object BankAccount {
     }
     else false
 
-}
-
-class BankAccount {
-}
-
-class Keyed {
-  def computeKey: Int = {
-    123
-  }
-}
-
-class MemoKeyed extends Keyed {
-  private var keyCache: Option[Int] = None
-
-  override def computeKey: Int = {
-    if (!keyCache.isDefined) keyCache = Some(super.computeKey)
-    keyCache.get
-  }
+  override def toString: String = s"account name: $name, account amount: $balance"
 }

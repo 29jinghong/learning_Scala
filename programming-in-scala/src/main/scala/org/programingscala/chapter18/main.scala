@@ -1,4 +1,7 @@
 package org.programingscala.chapter18
+
+import org.programingscala.chapter18.MySimulation2.{halfAdder, probe, run}
+
 object main{
   def main(args: Array[String]): Unit = {
     //Thermometer.scala
@@ -16,12 +19,22 @@ object main{
     println()
 
     //BankAccount.scala
-    val account = BankAccount
+    val account = BankAccount("Jinghong Wang")
     account deposit 100
     account withdraw 80
-    println("account.getBalance")
-    println(account.getBalance)
+    println("account.toString")
+    println(account.toString)
     println()
+
+    //Second name testing
+    val account2 = BankAccount("Jason")
+    println(account2.toString)
+    account2 deposit 200
+    println("account2.toString")
+    println(account2.toString)
+    println()
+
+
 
 
   }

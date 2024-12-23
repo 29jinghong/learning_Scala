@@ -8,6 +8,13 @@ object Simulator2 {
     def AndGateDelay: Int
     def OrGateDelay: Int
 
+    object Wire{
+      def apply(): Wire = {
+        new Wire
+      }
+
+    }
+
     class Wire {
 
       private var sigVal = false
@@ -140,16 +147,18 @@ object MySimulation2 extends Simulator2.CircuitSimulation {
   def OrGateDelay = 5
 
   def main(args: Array[String]) {
-    val input1, input2, sum, carry = new Wire
+    //Simulator2.scala
+    //val input1, input2, sum
+    //val carry = Wire()
 
-    probe("sum", sum)
-    probe("carry", carry)
-    halfAdder(input1, input2, sum, carry)
-
-    input1 setSignal true
-    run()
-
-    input2 setSignal true
-    run()
+//    probe("sum", sum)
+//    probe("carry", carry)
+//    halfAdder(input1, input2, sum, carry)
+//
+//    input1 setSignal true
+//    run()
+//
+//    input2 setSignal true
+//    run()
   }
 }
