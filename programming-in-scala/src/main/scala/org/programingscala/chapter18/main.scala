@@ -1,7 +1,5 @@
 package org.programingscala.chapter18
 
-import org.programingscala.chapter18.MySimulation2.{halfAdder, probe, run}
-
 object main{
   def main(args: Array[String]): Unit = {
     //Thermometer.scala
@@ -33,6 +31,8 @@ object main{
     println("account2.toString")
     println(account2.toString)
     println()
+
+
 
 
 
