@@ -37,19 +37,59 @@ class Queue2[T](smele: List[T]) {
 }
 
 
-class Queue[T](
-                private val leading: List[T],
-                private val trailing: List[T])
-{
-  private def mirror =
-    if (leading.isEmpty) new Queue(trailing.reverse, Nil)
-    else this
-  def head =
-    mirror.leading.head
-  def tail = {
-    val q = mirror;
-    new Queue(q.leading.tail, q.trailing)
+trait Queue[T] {
+  //define trait Queue containing T
+  def head: T
+  //define head as T type
+  def tail: Queue[T]
+  //define tail as a Queue and store type as T
+  def append(x: T): Queue[T]
+  //define append as Queue containing T and input x: T
+}
+
+object Queue {
+  //define object Queue
+  def apply[T](xs: T*): Queue[T] = {
+    //define apply and "*" here means it can take 0 or more inputs
+    new QueueImpl[T](xs.toList, Nil)
+    //creating a new QueueImpl containing T and input xs.toList, and Nil
   }
-  def append(x: T) =
-    new Queue(leading, x :: trailing)
+
+  private class QueueImpl[T](
+                            //define QueueImpl as a private class and containing T
+                              private val leading: List[T],
+                            //input private val leading as List containing T
+                              private val trailing: List[T]
+                            //input private trailing as List containing T
+                            ) extends Queue[T] {
+                            //extends off of Queue containing T
+    def normalize =
+    //define normalize
+      if (leading.isEmpty) {
+        //if the leading is empty this will run
+        new QueueImpl(trailing.reverse, Nil)
+        //this is done to create a list
+      } else {
+        //if the leading is not empty this will run
+        this
+        //here "this" means that noting is changed and its returning the input as it is
+      }
+
+    def head: T = {
+      normalize.leading.head
+      //setting the head to whats in the lead
+    }
+
+    def tail: QueueImpl[T] = {
+      val q = normalize
+      //setting q as normalize
+      new QueueImpl(q.leading.tail, q.trailing)
+      //creating a new QueueImpl input q.leading.tail as the first and q.trailing as the second argument
+    }
+
+    def append(x: T) = {
+      new QueueImpl(leading, x :: trailing)
+      //appending x in front of trailing and behind leading
+    }
+  }
 }
