@@ -16,9 +16,10 @@ def processFile(filename: String, width: Int): Unit = {
     }
 
 def processLine(filename:String, width:Int, line:String): Unit = {
-      if (line.length > width)
+      if (line.length > width) {
         println(filename+": "+line.trim)
-    }
+      }
+}
 /*
 Method Definition: def drop(n: Int): List[A]
 
