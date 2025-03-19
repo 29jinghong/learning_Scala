@@ -92,4 +92,63 @@ object Queue {
       //appending x in front of trailing and behind leading
     }
   }
+
+  //class Queue[+T] {
+    //def append[U >: T](x: U) =
+      //new Queue[U](leading, x :: trailing)
+  //}
+  // the code above would also accept T type because >:
+
+
+  //trait OutputChannel[-T] {
+    //def write(x: T)
+  //}
+  //here is controvarant so if -T is a object, it will only accept string
+
 }
+
+//object Varince{
+//  trait Fruit {
+//    val color = ""
+//    val tast = ""
+//
+//  }
+//
+//  trait Apple extends Fruit{
+//   override val color = "red"
+//    override val tast = "sweet"
+//  }
+//
+//  trait Banana extends Fruit{
+//    override val color = "yellow"
+//    override val tast = "sweet"
+//  }
+//
+//  def foo(fruit: Fruit): Unit =
+//    println(fruit.toString)
+//
+//  //+ (for covariant) or − (for contravariant).
+//  //covariant
+//  trait MyList[+T] extends Seq[T]
+//
+//  case class CovariantList[+T](args: T *) extends MyList[T] {
+//    override def length: Int = args.length
+//
+//    override def iterator: Iterator[T] = args.iterator
+//  }
+//
+//  val apple1 = new Apple {}
+//  val apple2 = new Apple {}
+//  val banana1 = new Banana {}
+//  val banana2 = new Banana {}
+//  val banana3 = new Banana {}
+//
+//  val apples: MyList[Apple] = CovariantList(apple1, apple2)
+//  val bananas: MyList[Banana] = CovariantList(banana1, banana2, banana3)
+//  def bar(fruits: MyList[Fruit]): Unit = {
+//    fruits foreach println
+//  }
+//  bar(apples)
+//  bar(bananas)
+//}
+
