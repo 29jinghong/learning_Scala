@@ -1,0 +1,93 @@
+Abstract Members Overview
+An abstract member in a class or trait lacks a complete definition.
+It must be implemented in a subclass.
+Scala allows abstract methods, abstract fields (vals and vars), and abstract types.
+
+Example: Abstract Trait
+
+trait Abstract {
+    type T
+    def transform(x: T): T
+    val initial: T
+    var current: T
+}
+A concrete class must define these members explicitly.
+
+
+Abstract val (Immutable Variables)
+Declared without a value in the parent class.
+Must be initialized in the subclass.
+
+Example:
+
+abstract class A {
+    val v: String  // Abstract val
+}
+class C extends A {
+    val v: String = "hello"  // Must define `v`
+}
+Unlike abstract methods, abstract val cannot be overridden with a method (def).
+
+
+Abstract var (Mutable Variables)
+Abstract var is shorthand for getter and setter methods.
+
+Example:
+
+trait AbstractTime {
+    var hour: Int
+    var minute: Int
+}
+is equivalent to:
+
+trait AbstractTime {
+    def hour: Int
+    def hour_=(x: Int): Unit
+    def minute: Int
+    def minute_=(x: Int): Unit
+}
+
+
+Abstract Types
+Declares a type without specifying its exact implementation.
+Subclasses define what type it should be.
+
+Example:
+
+abstract class Animal {
+    type SuitableFood <: Food  // Must be a subclass of Food
+    def eat(food: SuitableFood): Unit
+}
+class Cow extends Animal {
+    type SuitableFood = Grass  // Defines what the abstract type is
+    def eat(food: Grass): Unit = println("Cow eats grass")
+}
+This prevents unsafe assignments like feeding a Fish to a Cow.
+
+
+Path-Dependent Types
+Types can depend on specific instances.
+
+Example:
+
+val cow1 = new Cow
+val cow2 = new Cow
+cow1.SuitableFood != cow2.SuitableFood  // Different paths, different types
+Useful for precise type constraints.
+
+
+Case Study: Currency System
+Goal: Model a currency system with different types of money.
+AbstractCurrency defines a generic structure for currencies.
+CurrencyZone provides concrete implementations (USD, EUR, JPY).
+Currency conversion is handled using exchange rates.
+
+Example:
+
+object US extends CurrencyZone {
+    type Currency = Dollar
+    def make(x: Long) = new Dollar { val amount = x }
+    val Dollar = make(100)
+    val Cent = make(1)
+}
+Prevents incorrect operations like adding Euros to Dollars.
