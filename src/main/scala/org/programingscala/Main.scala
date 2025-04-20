@@ -9,7 +9,7 @@ import org.programingscala.chapter08.Chapter08
 import org.programingscala.chapter09.Chapter09
 import org.programingscala.chapter10.Chapter10
 import org.programingscala.chapter12.{Chapter12 => ch12} 
-
+import org.programingscala.chapter21.Chapter21
 
 object Main extends App {
 	//============================Chapter 1==================================
@@ -49,10 +49,13 @@ object Main extends App {
   //===========================Chapter 10====================================
   //===========================Chapter 12====================================
   
-  ch12.jingyong.hi()
+//  ch12.jingyong.hi()
+//
+//  val jingyong = new ch12.Person("jingyong", 14)
+//  jingyong.greeting()
+//  jingyong.hi()
+  //
 
-  val jingyong = new ch12.Person("jingyong", 14)
-  jingyong.greeting()
-  jingyong.hi()
+
 
 }

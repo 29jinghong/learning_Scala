@@ -37,7 +37,7 @@ object chapter20 {
 
   // Invalid subclass attempting to override val with def
   abstract class BadApple extends Fruit {
-    def v: String // ERROR: Cannot override a val with a def
+    //def v: String // ERROR: Cannot override a val with a def
 
     def m: String // Correctly overrides method
   }

@@ -1,0 +1,5 @@
+"abc123" exists (_.isDigit) pg 405 explain this
+
+Scope Rule pg407 explain it further
+
+explan how the compiler insert a type 412

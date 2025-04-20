@@ -1,0 +1,86 @@
+
+Chapter 21: Implicit Conversions and Parameters – Detailed Notes
+
+What Are Implicits?
+Implicits in Scala are a powerful feature that allows the compiler to automatically insert code that you have
+as long as certain rules are followed.
+Main uses:
+- Implicit conversions
+- Implicit parameters
+
+Implicit Conversions
+Purpose: Automatically convert one type into another when required.
+Example:
+    implicit def intToString(x: Int): String = x.toString
+    val s: String = 42  // Automatically converts 42 to "42"
+Rule: Tried only if the compiler cannot otherwise make the code work
+
+Good Use Cases:
+- Enriching existing APIs
+- DSLs (domain-specific languages)
+
+Avoid:
+- Overusing for unrelated types
+- Making code unreadable or harder to debug
+
+Implicit Parameters
+Purpose: Omit arguments in method calls if a suitable implicit value is in scope.
+Example:
+    implicit val defaultRate: Double = 0.05
+    def computeTax(amount: Double)(implicit rate: Double): Double = amount * rate
+    val tax = computeTax(1000)  // Uses implicit value 0.05
+
+How it Works:
+- Compiler looks for an implicit value of the correct type in the current scope.
+
+Context Bounds and Implicits
+Purpose: Abstract over operations using implicits.
+Example:
+    def maxList[T : Ordering](elements: List[T]): T = elements.max
+Which is:
+    def maxList[T](elements: List[T])(implicit ord: Ordering[T]): T = elements.max(ord)
+
+
+21.2
+rules about implicit conversions
+1. Marking Rule: Only definitions marked implicit are available.
+
+need the key word implicit in front for it to work.
+
+2. Scope Rule: An inserted implicit conversion must be a single identifier
+    or be associated with the source or target type of the conversion.
+
+3. Non-Ambiguity Rule: An implicit conversion is only inserted if there is no other possible conversion to insert.
+if there is two posible choices the compiler will run error to tell the user there is two posible outcome
+
+4. One-at-a-time Rule: Only one implicit is tried.
+only dose one conversion at a time.
+
+5. Explicits-First Rule: Whenever code type checks as it is written, no implicits are attempted.
+if the code runs it will not apply implicits
+
+6. Naming an implicit conversion.
+if you want to use the implicit coversion some times you would have to import only part of the object.
+
+7. Where implicits are tried.
+conversions to an expected type.
+conversions of the receiver of a selection.
+implicit parameters.
+
+21.3
+Implicit conversions to an expected type are the first place that the compiler will use implicits. The rule is simple.
+Whenever the compiler sees an X, but needs a Y, it will look for an implicit function that converts X’s to Y’s.
+
+However, you can define an implicit conversion to smooth this over:
+implicit def double2int(x: Double) = x.toInt
+
+if it recived a double and it needs a int the compiler will search for one and if it finds it it will use it
+
+21.4
+val oneHalf = new Rational(1, 2)
+
+Even if the function dont have a + method you can still use + by adding:
+implicit def intToRational(x: Int) =
+          new Rational(x, 1)
+to make 1 + oneHalf work
+
