@@ -16,7 +16,7 @@ object Chapter23 {
     //
     val motherChildPair =
       for {
-        p <- persons if ! p.isMale
+        p <- persons //if ! p.isMale
         c <- p.children
       } yield (p.name, c.name)
 
@@ -27,6 +27,13 @@ object Chapter23 {
         .flatMap {
           p => p.children.map {
             c => (p.name, c.name)
+          }
+        }
+
+    val motherChildPair3 =
+      persons.flatMap { p =>
+          p.children.map { c =>
+            (p.name, c.name)
           }
         }
 
@@ -43,6 +50,12 @@ object Chapter23 {
       } yield {
         p.name
       }
+
+
+    val bobName2 =
+      persons
+        .filter { p => p.name startsWith "Bo" }
+        .map { p => p.name }
 
     println(bob)
 
@@ -65,8 +78,13 @@ object Chapter23 {
       for{
         x <- i1
         y <- i3
-      } yield x + y
+        z <- i2
+      } yield x + y + z
 
     println(sum)
+
+
+
+
   }
 }
