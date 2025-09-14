@@ -1,5 +1,7 @@
 package org.programingscala.chapter24
 
+import scala.annotation.tailrec
+
 object Chapter24 {
   object Email {
     def unapply(str: String): Option[(String, String)] = {
@@ -55,6 +57,11 @@ object Chapter24 {
     val p1 = Person("jinghong", 22)
     p1 match {
       case Person(name, age) => println(s"$name, $age")
+    }
+
+    @tailrec def factorialAcc(acc: Int, n: Int): Int = {
+      if (n <= 1) acc
+      else factorialAcc(n * acc, n - 1)
     }
 
   }
