@@ -1,0 +1,79 @@
+Chapter 24 – Extractors
+
+Big picture
+
+Constructors put data into an object.
+
+Extractors pull data out of an object.
+
+They shine when you use pattern matching—they let you say “if this object looks like that, give me the parts.”
+
+How an extractor works → unapply
+
+//
+def unapply(obj: T): Option[U]
+//
+
+1. If the pattern matches, return Some(result) (wrapped in Option).
+
+2. Otherwise, return None.
+
+That’s it: Some means “I got the pieces you asked for,” None means “no match—skip this case.”
+
+A quick example: Email extractor
+
+//
+object Email {
+  def unapply(str: String): Option[(String, String)] = {
+    val parts = str.split("@")
+    if (parts.length == 2) Some((parts(0), parts(1))) else None
+  }
+}
+
+val email = "john@doe.com"
+
+email match {
+  case Email(user, domain) =>
+    println(s"User: $user, Domain: $domain")
+  case _ =>
+    println("Not a valid email")
+}
+//
+
+If the string contains one “@”, you get (user, domain).
+
+Anything else falls through to the wildcard case.
+
+apply and unapply—two-way street
+
+//
+object Email {
+  def apply(user: String, domain: String): String =
+    s"$user@$domain"
+
+  def unapply(email: String): Option[(String, String)] = {
+    val parts = email.split("@")
+    if (parts.length == 2) Some((parts(0), parts(1))) else None
+  }
+}
+
+val e = Email("alice", "scala.com")
+println(e)
+//
+
+
+Matching variable-length parts → unapplySeq
+
+//
+object Names {
+  def unapplySeq(str: String): Option[Seq[String]] =
+    Some(str.split(" "))
+}
+
+"Mary Jane Watson" match {
+  case Names(first, middle, last) =>
+    println(s"First: $first, Middle: $middle, Last: $last")
+}
+//
+
+unapplySeq hands back a sequence so you can capture any number of elements.
